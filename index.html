@@ -15,17 +15,9 @@
             background: linear-gradient(180deg, #e0f0ff 0%, #f0f5ff 100%);
         }
         .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
             padding: 15px;
             background-color: #e0f0ff;
-        }
-        .back-btn, .more-btn {
-            width: 30px;
-            height: 30px;
-            background-color: #ccc;
-            border-radius: 50%;
+            /* 移除了 flex 布局（原用于排列左右按钮），仅保留背景和内边距 */
         }
         .group-card {
             background: white;
@@ -104,25 +96,23 @@
         .female { color: #ff88aa; }
         .kunming { color: #9999ff; }
         .post90 { color: #44ccaa; }
-   .join-btn {
-    background: #ffd700;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    font-size: 18px;
-    border-radius: 10px;
-    margin: 15px auto; /* 水平居中 */
-    width: calc(100% - 30px); /* 宽度适配 */
-    display: block; /* 确保块级 */
-    cursor: pointer;
-}
+        .join-btn {
+            background: #ffd700;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 18px;
+            border-radius: 10px;
+            margin: 15px auto; /* 水平居中 */
+            width: calc(100% - 30px); /* 宽度适配 */
+            display: block; /* 确保块级 */
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
-    <div class="header">
-        <div class="back-btn"></div>
-        <div class="more-btn"></div>
-    </div>
+    <!-- 顶部 header 仅保留背景容器，已完全移除两个按钮 -->
+    <div class="header"></div>
     <div class="group-card">
         <div class="group-header">
             <div class="group-avatar"></div>
@@ -130,7 +120,6 @@
                 <div class="group-title">全国交友搭子群</div>
                 <div class="group-meta">
                     422人 · 
-                    
                 </div>
             </div>
         </div>
@@ -163,8 +152,6 @@
             </div>
         </div>
     </div>
-    <a 
-    href="https://87013821.github.io/zfxz2/" class="join-btn">付费入群</a>
+    <a href="https://87013821.github.io/zfxz2/" class="join-btn">付费入群</a>
 </body>
-
 </html>
