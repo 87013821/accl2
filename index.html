@@ -17,7 +17,6 @@
         .header {
             padding: 15px;
             background-color: #e0f0ff;
-            /* 移除了 flex 布局（原用于排列左右按钮），仅保留背景和内边距 */
         }
         .group-card {
             background: white;
@@ -107,12 +106,12 @@
             width: calc(100% - 30px); /* 宽度适配 */
             display: block; /* 确保块级 */
             cursor: pointer;
+            text-decoration: none; /* 移除下划线 */
         }
     </style>
 </head>
 <body>
-    <!-- 顶部 header 仅保留背景容器，已完全移除两个按钮 -->
-    <div class="header"></div>
+    <div class="header"></div> <!-- 无任何圆点按钮 -->
     <div class="group-card">
         <div class="group-header">
             <div class="group-avatar"></div>
